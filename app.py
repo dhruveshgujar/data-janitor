@@ -133,7 +133,22 @@ with st.sidebar:
     </div>
     """, unsafe_allow_html=True)
     
-    st.sidebar.link_button("Book Demo Call", "mailto:inboxtopdf@gmail.com", type="primary")
+    st.sidebar.markdown("""
+        <a href="mailto:inboxtopdf@gmail.com" target="_blank">
+            <button style="
+                width: 100%;
+                background-color: #ff4b4b;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                font-weight: bold;
+                cursor: pointer;
+            ">
+                Book Demo Call
+            </button>
+        </a>
+    """, unsafe_allow_html=True)
 
 # Main Stage
 st.markdown(f'<h1 class="hero-header">{APP_NAME}</h1>', unsafe_allow_html=True)
