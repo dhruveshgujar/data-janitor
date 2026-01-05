@@ -130,9 +130,10 @@ with st.sidebar:
             Processing >50k rows? Need direct Salesforce/HubSpot API syncing?
             We build custom data pipelines.
         </div>
-        <a href="mailto:sales@datascrubpro.com?subject=Enterprise%20Pipeline%20Inquiry" class="upsell-btn">Book Demo Call</a>
     </div>
     """, unsafe_allow_html=True)
+    
+    st.sidebar.link_button("Book Demo Call", "mailto:inboxtopdf@gmail.com", type="primary")
 
 # Main Stage
 st.markdown(f'<h1 class="hero-header">{APP_NAME}</h1>', unsafe_allow_html=True)
