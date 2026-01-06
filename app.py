@@ -133,22 +133,8 @@ with st.sidebar:
     </div>
     """, unsafe_allow_html=True)
     
-    st.sidebar.markdown("""
-        <a href="mailto:inboxtopdf@gmail.com" target="_blank">
-            <button style="
-                width: 100%;
-                background-color: #ff4b4b;
-                color: white;
-                border: none;
-                padding: 10px 20px;
-                border-radius: 5px;
-                font-weight: bold;
-                cursor: pointer;
-            ">
-                Book Demo Call
-            </button>
-        </a>
-    """, unsafe_allow_html=True)
+    # This creates the button that opens your payment page
+    st.sidebar.link_button("Book Audit Call (₹99)", "https://topmate.io/dhruvesh_gujar/1878332")
 
 # Main Stage
 st.markdown(f'<h1 class="hero-header">{APP_NAME}</h1>', unsafe_allow_html=True)
